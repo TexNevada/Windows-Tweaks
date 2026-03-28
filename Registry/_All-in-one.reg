@@ -1,0 +1,29 @@
+Windows Registry Editor Version 5.00
+
+; --- Disables Windows 11 online searching
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001
+
+; --- Enable Hibernate option in power menu
+; --- Hibernation saves the OS state to disk instead of memory like sleep 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"HibernateEnabled"=dword:00000001
+"HibernateEnabledDefault"=dword:00000001
+
+; --- Hide Sleep from Power Menu
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings]
+"ShowSleepOption"=dword:00000000
+
+; --- Start menu buttons
+; --- Just comment out what you don't want enabled|
+; --- or just change 1 to 0
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_ShowSettings"=dword:00000001
+"Start_ShowFileExplorer"=dword:00000001
+"Start_ShowDocuments"=dword:00000001
+"Start_ShowDownloads"=dword:00000001
+"Start_ShowMusic"=dword:00000001
+"Start_ShowPictures"=dword:00000001
+"Start_ShowVideos"=dword:00000001
+;"Start_ShowNetwork"=dword:00000001
+"Start_ShowUser"=dword:00000001

@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+; --- Hide Sleep from Power Menu
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings]
+"ShowSleepOption"=dword:00000000

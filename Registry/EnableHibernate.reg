@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; --- Enable Hibernate option in power menu
+; --- Hibernation saves the OS state to disk instead of memory like sleep 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"HibernateEnabled"=dword:00000001
+"HibernateEnabledDefault"=dword:00000001
