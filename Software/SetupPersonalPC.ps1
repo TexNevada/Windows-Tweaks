@@ -1,11 +1,12 @@
-New-Item -Path $profile.CurrentUserAllHosts -Type File -Force
+# Winget install ¨
 
-winget install SteelSeries.GG
 
 # Gaming
 winget install Elgato.StreamDeck
 winget install Valve.Steam
 winget install ebkr.r2modman
+# For the headset
+winget install SteelSeries.GG
 
 # Tools
 winget install CrystalDewWorld.CrystalDiskInfo
